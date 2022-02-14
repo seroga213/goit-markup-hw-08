@@ -1,0 +1,37 @@
+.specialization.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  
+  
+
+
+  .specialization__item{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px)
+    
+  }
+  .after-second-titles {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+  }
+  .specialization__title {
+    color: var(--external-color);
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+  }

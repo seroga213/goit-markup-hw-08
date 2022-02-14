@@ -1,0 +1,150 @@
+.footer {
+    background-color: var(--bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-addr{
+    font-style: inherit;
+  }
+
+  .page-footer__container{
+    display: flex;
+    align-items: baseline;
+  }
+  .address-container {
+    margin-right: 70px;
+  }
+ 
+  .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  
+     
+   
+  .social__item:not(:last-child) {
+    margin-right: 10px;
+}
+  .social__links {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:var(--icons-color);
+    &:focus,
+    &:hover {
+    color:var(--external-color);
+    background-color: var(--accent-color);
+    }
+    &:hover .team-social-icons,
+    &:focus .team-social-icons {
+    fill: var(--external-color);}
+
+    transition: color var(--transition), background-color var(--transition) }
+  .social-icons {
+    fill: currentColor;
+  }
+  
+  
+  .join-us-item:not(:last-child) {
+      margin-right: 10px;
+  }
+
+  .address__list.list{
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-flow: column;
+  }
+
+.address__item:not(:last-child){
+  margin-bottom: 9px;
+}
+  
+  .footer-addr-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  }
+    transition:  var(--transition) 
+    
+  }
+  
+  .footer-addr-link[target='_blank'] {
+    color: #ffffff;
+  }
+  
+  
+  /*---------------Вторая часть футера------------*/
+  .page-footer__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--external-color);
+  }
+
+.footer .social-links{
+     color:var(--external-color);
+     
+   } 
+
+.footer-social-icons {
+    fill: var(--external-color);}
+
+.footer-form__email {
+  width: 360px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  background-color: inherit;
+  color: var(--external-color);
+  &:hover,
+  &:focus {
+  border-color: var(--accent-color);
+}
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__btn {
+  position: relative;
+  display: flex;
+}
+
+.footer-label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.footer-form-container {
+  margin-left: 93px;
+  width: 100%;
+}
+.subscribe__btn{
+  margin-left: 10px;
+}

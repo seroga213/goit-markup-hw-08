@@ -1,0 +1,31 @@
+
+@import "./utils/vars";
+@import "./base/reset";
+@import "./base/common";
+@import "./utils/hidden";
+
+
+
+//components
+@import "./components/container";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/section";
+@import "./components/second-title";
+@import "./components/current";
+
+
+
+
+//layout
+@import "./layout/header";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/aboutus";
+@import "./layout/hero";
+@import "./layout/portfolio";
+@import "./layout/team";
+@import "./layout/specialization";
+
+
+
