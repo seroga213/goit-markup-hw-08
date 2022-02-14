@@ -1,6 +1,19 @@
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-    margin: 0 auto;
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @include tel {
+    width: 480px;
   }
+
+  @include tab {
+    width: 768px;
+  }
+
+  @include desk {
+    width: 1200px;
+  }
+
+
+}

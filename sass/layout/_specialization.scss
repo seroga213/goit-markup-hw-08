@@ -5,10 +5,11 @@
     margin-top: -30px;
   }
   
-  
-
 
   .specialization__item{
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
     position: relative;
     margin-left: 30px;
     margin-top: 30px;

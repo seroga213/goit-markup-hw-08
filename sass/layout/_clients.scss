@@ -8,7 +8,7 @@
   .client__item{
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis:  calc(100% / 6 - 30px)
+    flex-basis: calc(100% / 2 - 30px);
   }
   
   .client__link {
@@ -16,16 +16,20 @@
     box-sizing: border-box;
     border-radius: 4px;
     display: flex;
-    color: var(--icons-color);
+    width: 100%;
     justify-content: center;
     align-items: center;
     height: 92px;
+    color: var(--icons-color);
     &:hover,
     &:focus {
     color: var(--accent-color)
   }
     transition: color var(--transition) 
   }
+  
+
+
   
   .client__icon {
     fill: currentColor

@@ -8,8 +8,29 @@
   }
 
   .page-footer__container{
-    display: flex;
-    align-items: baseline;
+      @include tab {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+      }
+    
+      @include desk {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    
+    
+    .footer-cont-item {
+      text-align: center;
+      @include desk {
+        text-align: left;
+        margin-right: 70px;
+        min-width: 216px;
+      }
+    }
   }
   .address-container {
     margin-right: 70px;
@@ -88,13 +109,17 @@
   /*---------------Вторая часть футера------------*/
   .page-footer__title{
     font-weight: 700;
+     color: var(--external-color);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: var(--external-color);
+    @include desk {
+      text-align: left;
+   
   }
+}
 
 .footer .social-links{
      color:var(--external-color);
@@ -126,13 +151,22 @@
 
 
 .footer-form {
-  display: flex;
-  align-items: flex-end;
+  text-align: center;
+  margin-top: 60px;
+  @include desk {
+    margin-top: 0;
+    margin-left: 93px;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .footer__btn {
   position: relative;
   display: flex;
+  margin-inline: auto;
+  margin-top: 20px;
+  
 }
 
 .footer-label {

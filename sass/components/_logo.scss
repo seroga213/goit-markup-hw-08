@@ -7,6 +7,14 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     width: 145px;
+    @include tab {
+      margin-right: 88px;
+    }
+    @include desk {
+      font-size: 26px;
+      line-height: 1.19;
+      margin-right: 93px;
+    }
     display: block;
   }
   
