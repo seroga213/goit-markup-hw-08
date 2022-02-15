@@ -981,10 +981,6 @@ img {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.specialization__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .after-second-titles {
   font-weight: 700;
   font-size: 14px;
