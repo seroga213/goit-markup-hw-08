@@ -28,22 +28,54 @@
     margin-right: 50px;
   }
 
-  .header-tel{
+  
+  .header-tel {
     display: none;
-  align-items: center;
-  @include tab {
-    display: block;
-  }
-  @include desk {
-    display: flex;
-  }
+    align-items: center;
+    @include tab {
+      display: block;
+    }
+    @include desk {
+      display: flex;
+    }
   }
   
   .header__tel:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+    @include desk {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
-
   
+  .auth-nav__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    @include desk {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+  
+  .auth-nav__icon {
+    margin-right: 8px;
+    fill: currentColor;
+    @include desk {
+      margin-right: 10px;
+    }
+  }
   
   
   .site-list{
