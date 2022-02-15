@@ -6,6 +6,12 @@
     margin-right: 8px;
   }
   
+  .filter-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+    @include tab {
+      margin-bottom: 0;
+    }
+  }
    .filter-btn {
     cursor: pointer; 
     font-weight: 500;
@@ -32,26 +38,45 @@
  
   .filter-list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @include tab {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @include desk {
+      margin-bottom: 50px;
+    }
   }
   
   .project-list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-
+    margin: 0;
+    padding: 0;
+    @include tab {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+    }
   }
 
   .project-list-item{ 
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    @include tab {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    @include desk {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
+
 
   
   .project-list-title{

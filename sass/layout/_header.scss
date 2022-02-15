@@ -84,7 +84,7 @@
   }
  
 .menu.is-hidden {
-    transform: scale(0.1);
+    left: 100%;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -118,7 +118,7 @@
     max-height: 796px;
     z-index: 1;
     overflow-y: scroll;
-    transition: transform 550ms, opacity 500ms, visibility 500ms;
+    transition: left 550ms, opacity 500ms, visibility 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     
@@ -145,7 +145,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      fill: var(--btn-color);
+      fill: var(--accent-color);
     }
   }
   
@@ -160,18 +160,18 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
+    color: var(--title-color);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      color: var(--btn-color);
+      color: var(--accent-color);
     }
   }
   
   .mob-menu__link--active {
-    color: var(--btn-color);
+    color: var(--accent-color);
   }
   .mob-menu__social {
     display: flex;
@@ -183,7 +183,7 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--btn-color);
+    color: var(--accent-color);
   }
   
   .mob-menu__social__item {
@@ -196,6 +196,60 @@
       padding-left: 10px;
     }
   }  
+
+  .auth__list {
+    margin-bottom: 64px;
+  }
+  
+  .auth__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .auth__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  
+  .auth__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    transition-property: color, font-weight, font-size, letter-spacing;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .mob-menu__social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .mob-menu__social__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  
+  .mob-menu__social__item {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 10px;
+    }
+  
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+  }
+  
  
 
   

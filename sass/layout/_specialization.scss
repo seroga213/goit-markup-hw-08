@@ -1,10 +1,17 @@
+//  .product{
+//     padding-top: 0;
+//     @media screen and (max-width: 1199px) {
+      
+//     }
+//   }
+
 .specialization.list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
   }
-  
+ 
 
   .specialization__item{
    
@@ -34,3 +41,4 @@
     position: absolute;
     bottom: 0;
   }
+

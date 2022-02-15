@@ -5,6 +5,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    overflow-x:hidden
     
   }
   
@@ -24,4 +25,7 @@ body {
     display: block;
     min-width: 100%;
     height: auto;
+    }
+    body.menu-open {
+      overflow: hidden;
     }
