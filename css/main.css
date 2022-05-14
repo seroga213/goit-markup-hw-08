@@ -116,13 +116,6 @@ body.menu-open {
   width: 145px;
 }
 
-@media screen and (min-width: 768px) {
-  .logo__header,
-  .logo__footer {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo__header,
   .logo__footer {
@@ -407,11 +400,11 @@ body.menu-open {
 
 .section__title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .current {
@@ -918,7 +911,7 @@ body.menu-open {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--pf-link-color);
+  color: var(--icons-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1024,6 +1017,7 @@ body.menu-open {
 
 .social__icons {
   fill: currentColor;
+  color: var(--external-color);
 }
 
 .peculiarities__item:not(:first-child) {
